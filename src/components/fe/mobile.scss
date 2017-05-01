@@ -5,7 +5,9 @@
   .promo {
     margin-bottom: px(76);
     padding: px(42) 0;
-    background: url(../images/backgroundMobile1.png) no-repeat, $background1;
+    background: url(../images/backgroundMobile1.png) no-repeat 0 0, $background1;
+    background-size: cover;
+    background-position: center;
     height: px(1080);
     text-align: center;
     width: 100%;
@@ -68,15 +70,60 @@
   }
 
   .blackText {
-    margin-bottom: px(20);
+    margin-bottom: px(30);
     color: $background1;
     font-size: px(44);
     font-weight: 700;
     text-align: center;
   }
 
-  .stepButton {
-    font-size: px(10);
-    text-transform: uppercase;
+  .step {
+    margin: 0 px(20) px(10);
+    padding: px(138) 0 px(5) px(40);
+    background: linear-gradient(to top, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0) 100%), url(../images/backgroundMobile2.png) no-repeat px(-18) px(-55) transparent;
+    border-radius: px(8);
+    overflow: hidden;
+    position: relative;
   }
+
+  .step::before {
+    border-radius: px(8);
+    background: transparent;
+    background: linear-gradient(to top, rgba(255, 153, 51, .1) 0%, rgba(255, 133, 35, .1) 100%);
+    content: "";
+    display: block;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+
+  .stepButton {
+    margin-bottom: px(30);
+    padding: px(8) px(25) px(8) px(28);
+    background: $buttonColor;
+    border-radius: px(45);
+    color: $textColor;
+    border: 0;
+    outline: none;
+    font-size: px(21);
+    text-transform: uppercase;
+    letter-spacing: px(4);
+  }
+
+  h2 {
+    margin-bottom: px(26);
+    font-size: px(48);
+    font-weight: 700;
+    line-height: px(56);
+  }
+
+  .step
+  .robot {
+    font-size: px(28);
+    letter-spacing: px(.3);
+    line-height: px(32);
+  }
+
 }
