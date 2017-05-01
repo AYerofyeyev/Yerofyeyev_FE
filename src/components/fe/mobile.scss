@@ -3,25 +3,32 @@
   color: $textColor;
 
   .pageOne {
-    padding: px(5) 26%;
+    padding: px(42) 0;
     background: url(../images/backgroundMobile1.png) no-repeat, $background1;
-    height: px(540);
+    height: px(1080);
     text-align: center;
     width: 100%;
   }
 
+  form {
+    padding: 0 px(130);
+    text-align: left;
+  }
+
   input {
+
+    padding: px(14) px(30);
+    border: px(5) solid $textColorTransp;
+    border-radius: px(45);
     background: none;
     outline: none;
-    border: 0;
     color: $textColor;
-    font-size: px(14);
+    font-size: px(28);
     font-weight: 700;
   }
 
   input:focus {
-  border: px(2) solid $textColor;
-  border-radius: px(25);
+  border: px(5) solid $textColor;
   // background-color: rgba(26, 25, 21, 0);
   // position: absolute;
   // left: 143px;
@@ -54,5 +61,16 @@
     outline: none;
     font-size: px(14);
     font-weight: 700;
+  }
+
+  .blackText {
+    color: $background1;
+    font-size: px(20);
+    font-weight: 700;
+  }
+
+  .step1
+  button {
+    font-size: px(10);
   }
 }
