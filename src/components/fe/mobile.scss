@@ -2,7 +2,8 @@
   font-family: Montserrat;
   color: $textColor;
 
-  .pageOne {
+  .promo {
+    margin-bottom: px(76);
     padding: px(42) 0;
     background: url(../images/backgroundMobile1.png) no-repeat, $background1;
     height: px(1080);
@@ -11,12 +12,12 @@
   }
 
   form {
+    margin-bottom: px(230);
     padding: 0 px(130);
     text-align: left;
   }
 
   input {
-
     padding: px(14) px(30);
     border: px(5) solid $textColorTransp;
     border-radius: px(45);
@@ -29,48 +30,53 @@
 
   input:focus {
   border: px(5) solid $textColor;
-  // background-color: rgba(26, 25, 21, 0);
-  // position: absolute;
-  // left: 143px;
-  // top: 18px;
-  // width: 90px;
-  // height: 36px;
-  // z-index: 13;
   }
 
   .brand {
-    font-size: px(20);
+    margin-bottom: px(66);
+    font-size: px(40);
     font-weight: 700;
     text-transform: uppercase;
+    letter-spacing: px(2);
   }
 
   h1 {
-    font-size: px(30);
+    margin-bottom: px(22);
+    font-size: px(60);
     font-weight: 700;
     text-transform: uppercase;
+    line-height: px(68);
   }
 
   .robot {
-    font-size: px(18);
+    margin-bottom: px(32);
+    font-family: Roboto;
+    font-size: px(37);
+    font-weight: 200;
+    line-height: px(42);
   }
 
-  button {
-    background: none;
+  .findButton {
+    padding: px(22) px(100);
+    background: $buttonColor;
+    border-radius: px(45);
     color: $textColor;
     border: 0;
     outline: none;
-    font-size: px(14);
+    font-size: px(28);
     font-weight: 700;
   }
 
   .blackText {
+    margin-bottom: px(20);
     color: $background1;
-    font-size: px(20);
+    font-size: px(44);
     font-weight: 700;
+    text-align: center;
   }
 
-  .step1
-  button {
+  .stepButton {
     font-size: px(10);
+    text-transform: uppercase;
   }
 }
