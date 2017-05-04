@@ -1,3 +1,103 @@
+@import 'mobile';
 & {
+  font-family: Montserrat;
+  color: $textColor;
+
+  .promo {
+    margin: 0 auto px(150);
+    position: relative;
+    padding: px(74) px(390);
+    background: url(../images/background/backgroundDesktop1.png) no-repeat 0 0, $background1;
+    height: px(1092);
+  }
+
+  .promo::after {
+    display: table;
+    content: "";
+    clear: both;
+  }
+
+  .brand {
+    float: left;
+    font-size: px(32);
+    letter-spacing: px(.9);
+  }
+
+  form {
+    float: right;
+    margin-bottom: 0;
+  }
+
+  input {
+    padding: px(14) px(30);
+    border: px(5) solid $textColorTransp;
+    border-radius: px(45);
+    background: none;
+    outline: none;
+    color: $textColor;
+    font-size: px(28);
+    font-weight: 700;
+  }
+
+  input:focus {
+  border: px(5) solid $textColor;
+  }
+
+  h1 {
+  margin: px(264) 0 0 0;
+  font-size: px(81);
+  line-height: px(96);
+  }
+
+  .robot {
+
+  }
+
+  .findButton {
+    display: inline-block;
+  }
+
+  .blackText {
+    margin-bottom: px(60);
+    font-size: px(35);
+    letter-spacing: px(-.4);
+  }
+
+  .pageSteps {
+    padding: 0 px(370);
+  }
+
+  .step {
+    display: inline-block;
+    padding: px(358) 0 px(33) px(30);
+    width: px(470);
+  }
+
+  .step::before {
+    top: px(10);
+  }
+
+  .step1 {
+    margin-right: px(4);
+    background: linear-gradient(to top, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0) 100%), url(../images/background/backgroundDesktop2.png) 100% 100% no-repeat transparent;
+    background-position: center;
+  }
+
+  .step2 {
+    margin-right: px(22);
+    background: linear-gradient(to top, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0) 100%), url(../images/background/backgroundDesktop3.png) 100% 100% no-repeat transparent;
+    background-position: center;
+  }
+  .step3 {
+    margin: 0;
+    border-radius: px(8);
+    background: linear-gradient(to top, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0) 100%), url(../images/background/backgroundDesktop4.png) 100% 100% no-repeat transparent;
+    background-position: center;
+    top: px(-10);
+  }
+
+  .step3::before {
+    top: px(20);
+  }
 
 }

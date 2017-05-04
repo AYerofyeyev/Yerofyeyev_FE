@@ -5,7 +5,7 @@
   .promo {
     margin-bottom: px(76);
     padding: px(42) 0;
-    background: url(../images/backgroundMobile1.png) no-repeat 0 0, $background1;
+    background: url(../images/background/backgroundMobile1.png) no-repeat 0 0, $background1;
     background-size: cover;
     background-position: center;
     height: px(1080);
@@ -79,8 +79,8 @@
 
   .step {
     margin: 0 px(20) px(10);
-    padding: px(138) 0 px(5) px(40);
-    background: linear-gradient(to top, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0) 100%), url(../images/backgroundMobile2.png) no-repeat px(-18) px(-55) transparent;
+    padding: px(138) 0 px(33) px(40);
+    background-size: cover;
     border-radius: px(8);
     overflow: hidden;
     position: relative;
@@ -121,9 +121,61 @@
 
   .step
   .robot {
+    margin-bottom: 0;
     font-size: px(28);
     letter-spacing: px(.3);
     line-height: px(32);
   }
+
+  .step1 {
+    background: linear-gradient(to top, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0) 100%), url(../images/background/backgroundMobile2.png) 100% 100% no-repeat transparent;
+  }
+
+  .step2 {
+    background: linear-gradient(to top, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0) 100%), url(../images/background/backgroundMobile3.png) 100% 100% no-repeat transparent;
+  }
+
+  .step3 {
+    background: linear-gradient(to top, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0) 100%), url(../images/background/backgroundMobile4.png) 100% 100% no-repeat transparent;
+  }
+
+  .partners {
+    text-align: center;
+  }
+
+  .findPartners {
+    margin: 0 auto px(30);
+    padding: px(8) px(25) px(8) px(28);
+    background: none;
+    border-radius: px(45);
+    color: $buttonColor;
+    border: px(5) solid $buttonColor;
+    outline: none;
+    font-size: px(21);
+    text-transform: uppercase;
+    letter-spacing: px(4);
+  }
+
+  footer {
+    border-top: px(5) solid $buttonColor;
+    color: $background1;
+    text-align: center;
+  }
+
+  .brand__color_red {
+    color: $buttonColor;
+  }
+
+  footer
+  li {
+    display: inline-block;
+  }
+
+  footer
+  .footer_link {
+      color: $background1;
+      text-decoration: none;
+  }
+
 
 }

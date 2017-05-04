@@ -1,1 +1,21 @@
 @import '../mobile';
+
+.promo {
+  position: relative;
+}
+
+.promo::after {
+  display: table;
+  content: "";
+  clear: both;
+}
+
+.promo
+.brand {
+  float: left;
+}
+
+.promo
+form {
+  float: right;
+}
